@@ -1,16 +1,14 @@
 import React from "react"
+import { graphql } from "gatsby"
 
-import Header from "../components/header/header"
-import Footer from "../components/footer/footer"
 import Intro from "../components/intro/intro"
 import ProjectImage from "./ProjectImage"
 import TechChip from "../components/TechChip/TechChip"
 import Github from "../components/github/Github"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 
-import "../styles.css"
-
-const Layout = ({ data }) => {
+const Project = ({ data }) => {
   const post = data.markdownRemark
   const {
     title1,
@@ -24,43 +22,39 @@ const Layout = ({ data }) => {
   } = data.markdownRemark.frontmatter
 
   return (
-    <>
+    <Layout>
       <SEO
         title={`${fullTitle}`}
         description="Dawid Mrozik's portofolio site"
       />
-      <Header />
-      <main>
-        <Intro
-          title1={title1}
-          title2={title2}
-          subtitle={mainTech}
-          img={featuredImage.childImageSharp.fluid}
-        />
-        <div className="portfolio-item-individual">
-          <div className="portfolio-item-individual-description">
-            {techs.map(tech => (
-              <TechChip tech={tech} />
-            ))}
+      <Intro
+        title1={title1}
+        title2={title2}
+        subtitle={mainTech}
+        img={featuredImage.childImageSharp.fluid}
+      />
+      <section className="portfolio-item-individual">
+        <div className="portfolio-item-individual-description">
+          {techs.map(tech => (
+            <TechChip tech={tech} />
+          ))}
 
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-            <div className="github-link-container">
-              <Github link={github} />
-            </div>
+          <div className="github-link-container">
+            <Github link={github} />
           </div>
-          {overviewImage && (
-            <>
-              <h3 className="portfolio-item-individual-overview-title">
-                Overview
-              </h3>
-              <ProjectImage img={overviewImage.childImageSharp.fluid} />
-            </>
-          )}
         </div>
-      </main>
-      <Footer />
-    </>
+        {overviewImage && (
+          <>
+            <h3 className="portfolio-item-individual-overview-title">
+              Overview
+            </h3>
+            <ProjectImage img={overviewImage.childImageSharp.fluid} />
+          </>
+        )}
+      </section>
+    </Layout>
   )
 }
 
@@ -94,4 +88,4 @@ export const query = graphql`
   }
 `
 
-export default Layout
+export default Project

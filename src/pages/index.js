@@ -7,7 +7,6 @@ import Intro from "../components/intro/intro"
 import Services from "../components/services/services"
 import Work from "../components/work/work"
 
-import "../styles.css"
 import { useStaticQuery } from "gatsby"
 
 const IndexPage = () => {
