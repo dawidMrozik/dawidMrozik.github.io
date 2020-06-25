@@ -13,7 +13,7 @@ import { useStaticQuery } from "gatsby"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      img: file(relativePath: { eq: "photo2.png" }) {
+      img: file(relativePath: { eq: "photo1.png" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
