@@ -8,6 +8,8 @@ import TechChip from "../components/TechChip/TechChip"
 import Github from "../components/github/Github"
 import SEO from "../components/seo"
 
+import "../styles.css"
+
 const Layout = ({ data }) => {
   const post = data.markdownRemark
   const {
