@@ -10,8 +10,8 @@ const About = () => (
 
     <div className="about-me__body">
       <p>
-        I'm freshly graduated IT engineer with a specialization of Web
-        applications. I like to code things from scratch, and enjoy bringing
+        I'm freshly graduated Computer Science engineer with a specialization of
+        Web applications. I like to code things from scratch, and enjoy bringing
         ideas to life in the browser. I'm well-organised and hard-working person
         who likes challenges and working with others. I love sharing my
         knowledge with teammates as well as learnig from them.

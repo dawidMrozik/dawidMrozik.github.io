@@ -10,5 +10,4 @@ featuredImage: ../images/portfolio/favnotes1.png
 overviewImage: ../images/portfolio/favnotes2.png
 ---
 
-Notes creator. I've learned storybook, styled-components and atomic design with this project. App allows saving simple notes, tweets with their authors and
-artciles with links to them.
+Notes creator. I've learned storybook, styled-components and atomic design with this project. App allows saving simple notes, tweets with their authors and articles with links to them.

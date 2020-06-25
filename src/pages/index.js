@@ -25,7 +25,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="homepage" description="Dawid Mrozik's portofolio site" />
+      <SEO title="homepage" description="Dawid Mrozik's portfolio site" />
       <Intro
         title1="Hi I'm"
         title2="Dawid Mrozik"

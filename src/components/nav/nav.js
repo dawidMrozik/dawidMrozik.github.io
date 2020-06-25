@@ -20,8 +20,9 @@ const Nav = ({ isNavOpen, toggleNav }) => {
       name: "My Work",
     },
     {
-      link: "/",
-      name: "Resume ⭳",
+      link:
+        "https://drive.google.com/file/d/1TAI_sGLf-c3zReTtORKCjij_fKZNunho/view?usp=sharing",
+      name: "Resume (922KB) ⭳",
     },
   ]
 

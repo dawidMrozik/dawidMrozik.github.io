@@ -6,8 +6,7 @@ fullTitle: "Personal Site"
 mainTech: "Gatsby"
 techs: ["Gatsby", "Markdown", "BEM"]
 github: "https://github.com/"
-featuredImage: ../images/portfolio/portfolio-03.jpg
+featuredImage: ../images/portfolio/personal-site1.png
 ---
 
-This site was built with Gatsby. It was my first project with this framework and i had a lot of fun exploring Great Gatsby's possibilities. It generates project pages
-based on Markdown files.
+This site was built with Gatsby. It was my first project with this framework and i had a lot of fun exploring Great Gatsby's possibilities. It generates project pages based on Markdown files.
