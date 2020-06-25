@@ -5,7 +5,7 @@ import Project from "../project/project"
 const Work = () => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___order] }) {
         edges {
           node {
             id
